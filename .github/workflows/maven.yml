@@ -28,7 +28,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run Java Application
-      run: java -jar target/WorkAndHoliday-1.0-SNAPSHOT-jar-with-dependencies
+      run: java -jar target/WorkAndHoliday-1.0-SNAPSHOT-jar-with-dependencies.jar
     - name: Commit
       run: |
          git config --local user.email xiaoqiu2017wy@163.com
