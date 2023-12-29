@@ -15,7 +15,7 @@ on:
         default: 'warning'
       tags:
         description: 'Test scenario tags'
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run Java Application
-      run: java -cp target/WorkAndHoliday-1.0-SNAPSHOT-jar-with-dependencies org.example.SpiderMain
+      run: java -jar target/WorkAndHoliday-1.0-SNAPSHOT-jar-with-dependencies
     - name: Commit
       run: |
          git config --local user.email xiaoqiu2017wy@163.com
